@@ -17,7 +17,7 @@ poule = { name: "La Poule Au Pout", address: "231 Ebury St, London SW1W 8UT", ph
 crepe = { name: "The Crepe Factory", address: "297 North End Rd, London W14 9NS", phone_number: "none hehe", categort: "belgian"}
 # [chinese italian japanese french belgian]
 
-[ dozo, mamma, earth, poule, crepe ].each do |attributes|
+[dozo, mamma, earth, poule, crepe].each do |attributes|
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"
 end
